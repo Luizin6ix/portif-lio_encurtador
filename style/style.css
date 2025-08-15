@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #22d4fd;
+    --cor-secundaria: #f6f6f6;
+    --cor-fundo: #000000;
+    --cor-rodape: #00ccff;
+
+     --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #000000;
+    color:#f6f6f6;
+}
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.navegacao {
+    display: flex;
+    gap: 80px;
+}
+
+.menu_link{
+   font-family: var(--fonte-secundaria);
+   font-size: 1.5rem;
+   font-weight: 600;
+    color: #22d4fd;
+    text-decoration: none;
+}
+
+
+.titulo-destaque{
+    color: #22d4fd;
+}
+
+
+.container{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;  
+}
+
+.container-texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo-container{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.texto-container {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.button{
+   
+   display: flex;
+   justify-content: center;
+    border: 2px solid #22d4fd;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 19.5px 0;
+    text-decoration: none;
+    color:#f6f6f6;
+    font-family: var(--fonte-secundaria);
+}
+
+.subtitulo{
+    font-family: 'krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+.button:hover {
+    background-color: #272727;
+    color: #a0a2a2;
+}
+
+.imagem{
+    width: 40%;
+
+}
+
+
+.rodape {
+        color:#000000;
+        background-color: #00ccff;
+        padding: 24px;
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+     .cabecalho{
+    padding: 10%;
+   }
+
+   .navegacao {
+    justify-content: center;
+   }
+
+   .container {
+    flex-direction: column-reverse;
+    padding: 5%;
+   }
+   .container-texto {
+    width: auto;
+   }
+}
+    
